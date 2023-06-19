@@ -1,5 +1,5 @@
 package selfTest;
-
+// 反转整个链表
 public class test11 {
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;
