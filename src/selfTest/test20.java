@@ -3,6 +3,9 @@ package selfTest;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 四数相加 Ⅱ
+ */
 public class test20 {
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
         Map<Integer, Integer> map = new HashMap<>();

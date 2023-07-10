@@ -8,12 +8,14 @@ import java.util.List;
 public class test7 {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
-        Arrays.sort(nums);  // 排序
+        // 排序
+        Arrays.sort(nums);
         for (int i = 0; i <nums.length ; i++) {
             if (nums[i] > 0){
                 return result;
             }
-            if (i > 0 && nums[i] == nums[i - 1]){  // 去重
+            // 去重
+            if (i > 0 && nums[i] == nums[i - 1]){
                 continue;
             }
             int left = i + 1;
@@ -27,8 +29,12 @@ public class test7 {
                 }else {
                     result.add(Arrays.asList(nums[i], nums[left], nums[right]));
                     // 对三元组中的b和c去重
-                    while (right > left && nums[right] == nums[right - 1]) right--;
-                    while (right > left && nums[left] == nums[left + 1]) left++;
+                    while (right > left && nums[right] == nums[right - 1]) {
+                        right--;
+                    }
+                    while (right > left && nums[left] == nums[left + 1]) {
+                        left++;
+                    }
                     right--;
                     left++;
                 }

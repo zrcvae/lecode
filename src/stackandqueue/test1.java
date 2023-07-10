@@ -37,7 +37,9 @@ public class test1 {
 
     }
     private void dumpIn(){
-        if (!Out.isEmpty()) return;
+        if (!Out.isEmpty()) {
+            return;
+        }
         while (!In.isEmpty()){
             Out.push(In.pop());
         }
